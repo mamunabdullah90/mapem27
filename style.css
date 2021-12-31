@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+body{
+    background: #334756;
+}
+.calendar{
+    padding: 20px 40px;
+}
+.months-container{
+    justify-content: center;
+    gap: 40px;
+
+}
+.calendar .months-container .month-container{
+    background: #2C394B;
+    padding: 20px;
+    min-width: 280px;
+    box-shadow: 15px 15px 40px rgba(0,0,0,.35);
+}
+.calendar table.month th.month-title{
+    background: linear-gradient(to left,red,green);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -ms-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -ms-text-fill-color: transparent;
+    animation: anim 2s linear infinite;
+    font-size: 1.9em;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+table.month td:nth-child(6),
+table.month td:last-child,
+table.month thead tr:nth-child(2) th:nth-child(6)
+table.month thead tr:nth-child(2) th:last-child{
+    color: hotpink;
+}
+.calendar table.month td.day .day-content{
+    padding: 6px 8px;
+}
+.calendar table.month th.day-header{
+    color: #777;
+    font-size: 0.9em;
+    font-weight: 700;
+}
+.month tr td{
+    color: #777;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+table.month td.day .day-content:hover{
+    color: red;
+    background: url(anim-fla.webp);
+}
+.calendar .calendar-header{
+    border: none;
+}
+.calendar .calendar-header table th:hover{
+    background: transparent;
+}
+.calendar .calendar-header .year-title{
+    font-size: 4em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(to left,red,green);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -ms-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -ms-text-fill-color: transparent;
+    animation: anim 2s linear infinite;
+}
+@keyframes anim{
+    100%{
+    background: linear-gradient(to right,red,green);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -ms-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -ms-text-fill-color: transparent;
+    }
+}
+.calendar .calendar-header .year-neighbor{
+    font-size: 2.25em;
+}
+.calendar .calendar-header .year-neighbor2{
+    font-size: 1.6em;
+}
+
+
